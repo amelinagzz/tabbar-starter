@@ -10,9 +10,22 @@ import UIKit
 
 class DetailVC: UIViewController {
 
+    let messageLabel : UILabel = {
+        let lbl = UILabel()
+        lbl.text = "Details about a Continent"
+        lbl.translatesAutoresizingMaskIntoConstraints = false
+        return lbl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
+        self.view.addSubview(messageLabel)
+        
+        NSLayoutConstraint.activate([
+            messageLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            messageLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+        ])
     }
 
 }

@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0EF78A25D36CDA00D544F2 /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0EF78925D36CDA00D544F2 /* Continent.swift */; };
+		AB0EF78F25D36D6F00D544F2 /* ContinentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0EF78E25D36D6F00D544F2 /* ContinentView.swift */; };
+		AB0EF79A25D375C600D544F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0EF79825D375C600D544F2 /* Assets.xcassets */; };
+		AB0EF79B25D375C600D544F2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0EF79925D375C600D544F2 /* Colors.xcassets */; };
 		ABE3461723FB41C200D06AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3461623FB41C200D06AAB /* AppDelegate.swift */; };
 		ABE3461923FB41C200D06AAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3461823FB41C200D06AAB /* SceneDelegate.swift */; };
-		ABE3462023FB41C700D06AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE3461F23FB41C700D06AAB /* Assets.xcassets */; };
 		ABE3462323FB41C700D06AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE3462123FB41C700D06AAB /* LaunchScreen.storyboard */; };
 		ABE3462E23FB41C800D06AAB /* TabBarDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3462D23FB41C800D06AAB /* TabBarDemoTests.swift */; };
 		ABE3463923FB41C800D06AAB /* TabBarDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3463823FB41C800D06AAB /* TabBarDemoUITests.swift */; };
@@ -36,10 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB0EF78925D36CDA00D544F2 /* Continent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continent.swift; sourceTree = "<group>"; };
+		AB0EF78E25D36D6F00D544F2 /* ContinentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentView.swift; sourceTree = "<group>"; };
+		AB0EF79825D375C600D544F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Downloads/tabbar-starter-master/TabBarDemo/Assets.xcassets"; sourceTree = "<group>"; };
+		AB0EF79925D375C600D544F2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = "../../../../../Downloads/tabbar-starter-master/TabBarDemo/Colors.xcassets"; sourceTree = "<group>"; };
 		ABE3461323FB41C200D06AAB /* TabBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE3461623FB41C200D06AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE3461823FB41C200D06AAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ABE3461F23FB41C700D06AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE3462223FB41C700D06AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABE3462423FB41C700D06AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABE3462923FB41C800D06AAB /* TabBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB0EF78525D36CA600D544F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB0EF78925D36CDA00D544F2 /* Continent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB0EF78725D36CB100D544F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB0EF78E25D36D6F00D544F2 /* ContinentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB0EF78825D36CBB00D544F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB0EF79825D375C600D544F2 /* Assets.xcassets */,
+				AB0EF79925D375C600D544F2 /* Colors.xcassets */,
+				ABE3462123FB41C700D06AAB /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		ABE3460A23FB41C200D06AAB = {
 			isa = PBXGroup;
 			children = (
@@ -103,10 +135,11 @@
 			children = (
 				ABE3461623FB41C200D06AAB /* AppDelegate.swift */,
 				ABE3461823FB41C200D06AAB /* SceneDelegate.swift */,
-				ABE3461F23FB41C700D06AAB /* Assets.xcassets */,
-				ABE3465523FB6EDE00D06AAB /* Controller */,
-				ABE3462123FB41C700D06AAB /* LaunchScreen.storyboard */,
 				ABE3462423FB41C700D06AAB /* Info.plist */,
+				AB0EF78825D36CBB00D544F2 /* Resources */,
+				AB0EF78725D36CB100D544F2 /* View */,
+				AB0EF78525D36CA600D544F2 /* Model */,
+				ABE3465523FB6EDE00D06AAB /* Controller */,
 			);
 			path = TabBarDemo;
 			sourceTree = "<group>";
@@ -243,8 +276,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0EF79B25D375C600D544F2 /* Colors.xcassets in Resources */,
 				ABE3462323FB41C700D06AAB /* LaunchScreen.storyboard in Resources */,
-				ABE3462023FB41C700D06AAB /* Assets.xcassets in Resources */,
+				AB0EF79A25D375C600D544F2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +305,9 @@
 			files = (
 				ABE3465423FB609E00D06AAB /* DetailVC.swift in Sources */,
 				ABE3464923FB457900D06AAB /* TabBarController.swift in Sources */,
+				AB0EF78A25D36CDA00D544F2 /* Continent.swift in Sources */,
 				ABE3461723FB41C200D06AAB /* AppDelegate.swift in Sources */,
+				AB0EF78F25D36D6F00D544F2 /* ContinentView.swift in Sources */,
 				ABE3464B23FB45BC00D06AAB /* ContinentVC.swift in Sources */,
 				ABE3461923FB41C200D06AAB /* SceneDelegate.swift in Sources */,
 			);
